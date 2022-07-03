@@ -27,6 +27,11 @@
             bindings = <&mo 3>;
             key-positions = <37 40>;
         };
+
+        new_combo {
+            bindings = <&tog 4>;
+            key-positions = <36 41>;
+        };
     };
 
     keymap {
@@ -65,6 +70,42 @@
   &none     &kp LCTRL     &kp LSHFT      &kp LGUI      &kp LALT         &none           &none  &kp LALT  &kp LGUI  &kp LSHIFT  &kp LCTRL   &none
   &none    &bt BT_CLR    &bt BT_NXT    &bt BT_PRV  &out OUT_TOG  &out OUT_USB           &none     &none     &none       &none      &none   &none
                                             &none         &none         &none           &none     &none     &none
+            >;
+        };
+
+        BASE42 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
+            >;
+        };
+
+        NAV42 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
+            >;
+        };
+
+        NUM42 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
+            >;
+        };
+
+        MOD42 {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
     };
