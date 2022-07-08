@@ -37,6 +37,7 @@
         toggle36 {
             bindings = <&tog 0>;
             key-positions = <36 41>;
+            layers = <4>;
         };
     };
 
