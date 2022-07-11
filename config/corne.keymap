@@ -34,6 +34,16 @@
             key-positions = <36 41>;
             layers = <4>;
         };
+
+        sd2esc {
+            bindings = <&kp ESC>;
+            key-positions = <14 15>;
+        };
+
+        kl2enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
     };
 
     keymap {
