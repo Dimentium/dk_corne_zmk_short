@@ -35,14 +35,19 @@
             layers = <4>;
         };
 
-        sd2esc {
-            bindings = <&kp ESC>;
+        sd2shift {
+            bindings = <&kp LSHIFT>;
             key-positions = <14 15>;
         };
 
-        kl2enter {
-            bindings = <&kp ENTER>;
+        kl2shift {
+            bindings = <&kp RSHIFT>;
             key-positions = <20 21>;
+        };
+
+        we2escape {
+            bindings = <&kp ESC>;
+            key-positions = <2 3>;
         };
     };
 
