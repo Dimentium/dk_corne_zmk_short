@@ -49,6 +49,11 @@
             bindings = <&kp ESC>;
             key-positions = <2 3>;
         };
+
+        io2escape {
+            bindings = <&kp ESC>;
+            key-positions = <8 9>;
+        };
     };
 
     keymap {
