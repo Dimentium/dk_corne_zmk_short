@@ -54,6 +54,16 @@
             bindings = <&kp ESC>;
             key-positions = <8 9>;
         };
+
+        xc2enter {
+            bindings = <&kp ENTER>;
+            key-positions = <26 27>;
+        };
+
+        commadot2enter {
+            bindings = <&kp ENTER>;
+            key-positions = <32 33>;
+        };
     };
 
     keymap {
