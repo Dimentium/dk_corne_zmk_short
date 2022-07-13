@@ -25,14 +25,14 @@
 
         toggle {
             bindings = <&tog 4>;
-            key-positions = <36 41>;
-            layers = <0>;
+            key-positions = <11 23>;
+            layers = <>;
         };
 
         toggle36 {
             bindings = <&tog 0>;
-            key-positions = <36 41>;
-            layers = <4>;
+            key-positions = <23 35>;
+            layers = <>;
         };
 
         sd2shift {
@@ -73,6 +73,11 @@
         df2win {
             bindings = <&sk LEFT_WIN>;
             key-positions = <16 15>;
+        };
+
+        vmcfree {
+            bindings = <&kp LC(LALT)>;
+            key-positions = <36 38>;
         };
     };
 
