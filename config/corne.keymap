@@ -21,63 +21,73 @@
         lock {
             bindings = <&kp LG(L)>;
             key-positions = <39 41>;
+            layers = <0>;
         };
 
         toggle {
             bindings = <&tog 4>;
             key-positions = <11 23>;
-            layers = <>;
+            layers = <0>;
         };
 
         toggle36 {
             bindings = <&tog 0>;
             key-positions = <23 35>;
-            layers = <>;
+            layers = <0>;
         };
 
         sd2shift {
             bindings = <&sk LSHIFT>;
             key-positions = <14 15>;
+            layers = <0>;
         };
 
         kl2shift {
             bindings = <&kp RSHIFT>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         we2escape {
             bindings = <&kp ESC>;
             key-positions = <2 3>;
+            layers = <0 1 2>;
         };
 
         io2escape {
             bindings = <&kp ESC>;
             key-positions = <8 9>;
+            layers = <0>;
         };
 
         xc2enter {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
+            layers = <0>;
         };
 
         commadot2enter {
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
+            layers = <0>;
         };
 
         as2ctrl {
             bindings = <&sk LCTRL>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         df2win {
             bindings = <&sk LEFT_WIN>;
             key-positions = <16 15>;
+            layers = <0>;
         };
 
         vmcfree {
             bindings = <&kp LC(LALT)>;
             key-positions = <36 38>;
+            layers = <0>;
         };
     };
 
