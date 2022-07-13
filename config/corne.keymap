@@ -51,7 +51,7 @@
         we2escape {
             bindings = <&kp ESC>;
             key-positions = <2 3>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         io2escape {
@@ -86,7 +86,13 @@
 
         vmcfree {
             bindings = <&kp LC(LALT)>;
-            key-positions = <36 38>;
+            key-positions = <13 16>;
+            layers = <0>;
+        };
+
+        asd2ctrlshift {
+            bindings = <&sk LC(LSHFT)>;
+            key-positions = <13 14 15>;
             layers = <0>;
         };
     };
