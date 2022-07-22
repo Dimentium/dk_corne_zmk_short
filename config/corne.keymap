@@ -97,16 +97,19 @@
         commadot2enter {
             bindings = <&kp ENTER>;
             key-positions = <32 33>;
+            layers = <0 1 2>;
         };
 
         dotslash2shiftenter {
             bindings = <&kp LS(ENTER)>;
             key-positions = <33 34>;
+            layers = <0 1 2>;
         };
 
         mcomma2ctrlenter {
             bindings = <&kp LC(ENTER)>;
             key-positions = <31 32>;
+            layers = <0 1 2>;
         };
     };
 
