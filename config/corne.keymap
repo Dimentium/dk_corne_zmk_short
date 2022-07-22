@@ -105,6 +105,12 @@
             key-positions = <31 32>;
             layers = <0 1 2>;
         };
+
+        jk2tab {
+            bindings = <&kp TAB>;
+            key-positions = <19 20>;
+            layers = <0 1 2>;
+        };
     };
 
     macros {
