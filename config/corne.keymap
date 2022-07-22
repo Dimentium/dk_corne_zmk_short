@@ -25,7 +25,7 @@
         sd2shift {
             bindings = <&sk LSHIFT>;
             key-positions = <14 15>;
-            layers = <0>;
+            layers = <>;
         };
 
         kl2shift {
@@ -37,59 +37,61 @@
         we2escape {
             bindings = <&kp ESC>;
             key-positions = <2 3>;
-            layers = <0>;
+            layers = <>;
         };
 
         io2escape {
             bindings = <&kp ESC>;
             key-positions = <8 9>;
-            layers = <0>;
+            layers = <>;
         };
 
         xc2enter {
             bindings = <&kp ENTER>;
             key-positions = <26 27>;
-            layers = <0>;
+            layers = <>;
         };
 
         commadot2enter {
             bindings = <&kp TAB>;
             key-positions = <32 33>;
-            layers = <0>;
+            layers = <>;
         };
 
         as2ctrl {
             bindings = <&sk LCTRL>;
             key-positions = <13 14>;
-            layers = <0>;
+            layers = <>;
         };
 
         df2win {
             bindings = <&sk LEFT_WIN>;
             key-positions = <16 15>;
-            layers = <0>;
+            layers = <>;
         };
 
         vmcfree {
             bindings = <&sk LALT>;
             key-positions = <13 16>;
-            layers = <0>;
+            layers = <>;
         };
 
         asd2ctrlshift {
             bindings = <&sk LC(LSHFT)>;
             key-positions = <13 14 15>;
-            layers = <0>;
+            layers = <>;
         };
 
         freevmc {
             bindings = <&kp LC(LALT)>;
             key-positions = <36 38>;
+            layers = <0>;
         };
 
         combotaurus {
             bindings = <&makrotaurus>;
             key-positions = <5 4>;
+            layers = <0>;
         };
     };
 
