@@ -55,7 +55,7 @@
         commadot2enter {
             bindings = <&kp TAB>;
             key-positions = <19 20>;
-            layers = <0 2>;
+            layers = <0 2 1>;
         };
 
         as2ctrl {
