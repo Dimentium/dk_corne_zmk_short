@@ -20,6 +20,7 @@
             bindings = <&kp LG(L)>;
             key-positions = <39 41>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         we2escape {
@@ -36,42 +37,42 @@
             layers = <0 1 2 3 4 5>;
         };
 
-        combotaurus {
+        freevmc {
             bindings = <&kp LC(LALT)>;
             key-positions = <36 38>;
-            timeout-ms = <null>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
-        commadot2enter {
+        combotaurus {
             bindings = <&makrotaurus>;
             key-positions = <5 4>;
             timeout-ms = <20>;
             layers = <1>;
         };
 
-        dotslash2shiftenter {
+        kl2enter {
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
             timeout-ms = <20>;
             layers = <0 1 2 3 4 5>;
         };
 
-        mcomma2ctrlenter {
+        jk2Slenter {
             bindings = <&kp LS(ENTER)>;
             key-positions = <19 20>;
             timeout-ms = <20>;
             layers = <0 1 2 3 4 5>;
         };
 
-        ui2tab {
+        l2Center {
             bindings = <&kp LC(ENTER)>;
             key-positions = <21 22>;
             timeout-ms = <20>;
             layers = <0 1 2 3 4 5>;
         };
 
-        mcomma2shifttab {
+        commadot2tab {
             bindings = <&kp TAB>;
             key-positions = <32 33>;
             layers = <0 1 2 3 4 5>;
@@ -81,6 +82,8 @@
         mcomma2shifttab {
             bindings = <&kp LS(TAB)>;
             key-positions = <31 32>;
+            layers = <0 1 2 3 4 5>;
+            timeout-ms = <20>;
         };
     };
 
