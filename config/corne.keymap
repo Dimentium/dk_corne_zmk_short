@@ -39,7 +39,7 @@
         combotaurus {
             bindings = <&kp LC(LALT)>;
             key-positions = <36 38>;
-            timeout-ms = <undefined>;
+            timeout-ms = <null>;
             layers = <0>;
         };
 
