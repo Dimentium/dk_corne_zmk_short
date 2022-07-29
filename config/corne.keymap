@@ -26,21 +26,14 @@
             bindings = <&kp ESC>;
             key-positions = <2 3>;
             timeout-ms = <20>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3 4 5>;
         };
 
         io2escape {
             bindings = <&kp ESC>;
             key-positions = <8 9>;
             timeout-ms = <20>;
-            layers = <0 1 2>;
-        };
-
-        xc2enter {
-            bindings = <&kp ENTER>;
-            key-positions = <26 27>;
-            timeout-ms = <20>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3 4 5>;
         };
 
         freevmc {
@@ -60,28 +53,33 @@
             bindings = <&kp ENTER>;
             key-positions = <20 21>;
             timeout-ms = <20>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3 4 5>;
         };
 
         dotslash2shiftenter {
             bindings = <&kp LS(ENTER)>;
-            key-positions = <21 22>;
+            key-positions = <19 20>;
             timeout-ms = <20>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3 4 5>;
         };
 
         mcomma2ctrlenter {
             bindings = <&kp LC(ENTER)>;
-            key-positions = <19 20>;
+            key-positions = <21 22>;
             timeout-ms = <20>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3 4 5>;
         };
 
         ui2tab {
             bindings = <&kp TAB>;
-            key-positions = <7 8>;
+            key-positions = <32 33>;
             timeout-ms = <20>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        mcomma2shifttab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <31 32>;
         };
     };
 
@@ -91,18 +89,6 @@
             label = "new_macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp A &kp U &kp R &kp U &kp S>;
-        };
-        l4: l4 {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 4>,
-                <&macro_tap>,
-                <&sl 4>,
-                <&macro_release>,
-                <&to 0>;
         };
     };
 
@@ -123,7 +109,7 @@
   &none    &trans    &trans      &none       &none      &none          &kp PG_UP  &kp HOME         &kp END          &kp INS          &kp DEL   &none
   &none  &sk LALT  &sk LWIN  &sk LCTRL  &sk LSHIFT  &kp K_APP           &kp LEFT  &kp DOWN          &kp UP        &kp RIGHT    &kp BACKSPACE   &none
   &none  &sk RALT     &none      &none  &caps_word      &none          &kp PG_DN   &kp TAB  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp PRINTSCREEN   &none
-                                 &none       &none      &none              &none     &none           &none
+                                 &none       &mo 2  &kp SPACE          &kp SPACE     &none           &none
             >;
         };
 
@@ -138,28 +124,28 @@
 
         additional {
             bindings = <
-  &none     &none     &none      &none  &key_repeat    &none          &kp LS(BSLH)         &kp BSLH  &kp RA(BSLH)  &kp MINUS      &kp EQUAL   &none
-  &none  &sk LALT  &sk LWIN  &sk LCTRL   &sk LSHIFT  &kp TAB             &kp GRAVE         &kp LBKT      &kp RBKT    &kp SQT  &kp LS(GRAVE)   &none
-  &none  &sk RALT     &none      &none   &caps_word    &none                 &none  &kp EXCLAMATION     &kp COMMA    &kp DOT   &kp QUESTION   &none
-                                 &none        &none    &none                 &mo 5            &mo 4         &mo 2
+  &none     &none     &none      &none  &key_repeat      &none          &kp LS(BSLH)   &kp BSLH  &kp RA(BSLH)    &none          &none   &none
+  &none  &sk LALT  &sk LWIN  &sk LCTRL   &sk LSHIFT    &kp TAB             &kp GRAVE   &kp LBKT      &kp RBKT  &kp SQT  &kp LS(GRAVE)   &none
+  &none  &sk RALT     &none      &none   &caps_word      &none                 &none  &kp MINUS     &kp COMMA  &kp DOT      &kp EQUAL   &none
+                                 &none        &none  &kp SPACE             &kp SPACE      &mo 4         &none
             >;
         };
 
         numbers {
             bindings = <
-  &none     &none     &none      &none  &key_repeat   &none          &kp N6     &kp N7     &kp N8   &kp N9     &kp N0   &none
-  &none  &sk LALT  &sk LWIN  &sk LCTRL    &sk LSHFT   &none          &kp N5     &kp N1     &kp N2   &kp N3     &kp N4   &none
-  &none  &sk RALT     &none      &none   &caps_word   &none           &none  &kp MINUS  &kp COMMA  &kp DOT  &kp EQUAL   &none
-                                 &none        &none   &none           &none      &none      &none
+  &none     &none     &none      &none  &key_repeat      &none             &kp N6     &kp N7     &kp N8   &kp N9     &kp N0   &none
+  &none  &sk LALT  &sk LWIN  &sk LCTRL    &sk LSHFT      &none             &kp N5     &kp N1     &kp N2   &kp N3     &kp N4   &none
+  &none  &sk RALT     &none      &none   &caps_word      &none              &none  &kp MINUS  &kp COMMA  &kp DOT  &kp EQUAL   &none
+                                 &none        &mo 5  &kp SPACE          &kp SPACE      &none      &none
             >;
         };
-        
+
         funcs {
             bindings = <
-  &none  &kp C_BRI_DN  &kp C_BRI_UP      &none      &none   &none          &kp F6   &kp F7   &kp F8  &kp F9  &kp F10   &none
-  &none      &sk LALT      &sk LWIN  &sk LCTRL  &sk LSHFT   &none          &kp F5   &kp F1   &kp F2  &kp F3   &kp F4   &none
-  &none         &none         &none      &none      &none   &none           &none  &kp F11  &kp F12   &none  &kp ESC   &none
-                                         &none      &none   &none           &none    &none    &none
+  &none  &kp C_BRI_DN  &kp C_BRI_UP      &none      &none      &none             &kp F6   &kp F7   &kp F8  &kp F9  &kp F10   &none
+  &none      &sk LALT      &sk LWIN  &sk LCTRL  &sk LSHFT      &none             &kp F5   &kp F1   &kp F2  &kp F3   &kp F4   &none
+  &none         &none         &none      &none      &none      &none              &none  &kp F11  &kp F12   &none  &kp ESC   &none
+                                         &none      &none  &kp SPACE          &kp SPACE    &none    &none
             >;
         };
     };
