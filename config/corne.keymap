@@ -85,6 +85,20 @@
             layers = <0 1 2 3 4 5>;
             timeout-ms = <20>;
         };
+
+        sd2enter {
+            bindings = <&kp ENTER>;
+            key-positions = <14 15>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        xc2tab {
+            bindings = <&kp TAB>;
+            key-positions = <26 27>;
+            timeout-ms = <20>;
+            layers = <0 1 2 3 4 5>;
+        };
     };
 
     macros {
@@ -110,9 +124,9 @@
 
         nav {
             bindings = <
-  &none  &kp K_CONTEXT_MENU    &trans      &none  &key_repeat    &kp ESC          &kp PG_UP  &kp HOME         &kp END          &kp INS          &kp DEL   &none
-  &none            &sk LALT  &sk LWIN  &sk LCTRL   &sk LSHIFT    &kp TAB           &kp LEFT  &kp DOWN          &kp UP        &kp RIGHT    &kp BACKSPACE   &none
-  &none            &sk RALT     &none      &none   &caps_word  &kp ENTER          &kp PG_DN   &kp TAB  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp PRINTSCREEN   &none
+  &none  &kp K_CONTEXT_MENU    &trans      &none  &key_repeat      &none          &kp PG_UP  &kp HOME         &kp END          &kp INS          &kp DEL   &none
+  &none            &sk LALT  &sk LWIN  &sk LCTRL   &sk LSHIFT   &sk RALT           &kp LEFT  &kp DOWN          &kp UP        &kp RIGHT    &kp BACKSPACE   &none
+  &none               &none     &none      &none   &caps_word      &none          &kp PG_DN   &kp TAB  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp PRINTSCREEN   &none
                                            &none        &mo 5  &kp SPACE          &kp SPACE     &none           &none
             >;
         };
@@ -128,27 +142,27 @@
 
         additional {
             bindings = <
-  &none  &kp K_CONTEXT_MENU     &none      &none  &key_repeat    &kp ESC            &kp ESC   &kp BSLH  &kp LS(BSLH)  &kp RA(BACKSLASH)      &kp GRAVE   &none
-  &none            &sk LALT  &sk LWIN  &sk LCTRL   &sk LSHIFT    &kp TAB            &kp TAB   &kp LBKT      &kp RBKT            &kp SQT  &kp LS(GRAVE)   &none
-  &none            &sk RALT     &none      &none   &caps_word  &kp ENTER          &kp ENTER  &kp MINUS     &kp COMMA            &kp DOT      &kp EQUAL   &none
-                                           &none        &none  &kp SPACE          &kp SPACE      &mo 4         &none
+  &none  &kp K_CONTEXT_MENU     &none      &none  &key_repeat      &none          &kp EXCLAMATION   &kp BSLH  &kp LS(BSLH)  &kp RA(BACKSLASH)      &kp GRAVE   &none
+  &none            &sk LALT  &sk LWIN  &sk LCTRL   &sk LSHIFT   &sk RALT             &kp QUESTION   &kp LBKT      &kp RBKT            &kp SQT  &kp LS(GRAVE)   &none
+  &none               &none     &none      &none   &caps_word      &none             &kp ASTERISK  &kp MINUS     &kp COMMA            &kp DOT      &kp EQUAL   &none
+                                           &none        &none  &kp SPACE                &kp SPACE      &mo 4         &none
             >;
         };
 
         numbers {
             bindings = <
-  &none  &kp K_CONTEXT_MENU     &none      &none  &key_repeat    &kp ESC             &kp N6     &kp N7     &kp N8   &kp N9     &kp N0   &none
-  &none            &sk LALT  &sk LWIN  &sk LCTRL    &sk LSHFT    &kp TAB             &kp N5     &kp N1     &kp N2   &kp N3     &kp N4   &none
-  &none            &sk RALT     &none      &none   &caps_word  &kp ENTER              &none  &kp MINUS  &kp COMMA  &kp DOT  &kp EQUAL   &none
+  &none  &kp K_CONTEXT_MENU     &none      &none  &key_repeat      &none             &kp N6     &kp N7     &kp N8   &kp N9     &kp N0   &none
+  &none            &sk LALT  &sk LWIN  &sk LCTRL    &sk LSHFT   &sk RALT             &kp N5     &kp N1     &kp N2   &kp N3     &kp N4   &none
+  &none               &none     &none      &none   &caps_word      &none              &none  &kp MINUS  &kp COMMA  &kp DOT  &kp EQUAL   &none
                                            &none        &mo 5  &kp SPACE          &kp SPACE      &none      &none
             >;
         };
 
         funcs {
             bindings = <
-  &none  &kp K_CONTEXT_MENU     &none      &none  &key_repeat    &kp ESC             &kp F6   &kp F7   &kp F8  &kp F9  &kp F10   &none
-  &none            &sk LALT  &sk LWIN  &sk LCTRL    &sk LSHFT    &kp TAB             &kp F5   &kp F1   &kp F2  &kp F3   &kp F4   &none
-  &none            &kp RALT     &none      &none   &caps_word  &kp ENTER              &none  &kp F11  &kp F12   &none  &kp ESC   &none
+  &none  &kp K_CONTEXT_MENU     &none      &none  &key_repeat      &none             &kp F6   &kp F7   &kp F8  &kp F9  &kp F10   &none
+  &none            &sk LALT  &sk LWIN  &sk LCTRL    &sk LSHFT   &sk RALT             &kp F5   &kp F1   &kp F2  &kp F3   &kp F4   &none
+  &none               &none     &none      &none   &caps_word      &none              &none  &kp F11  &kp F12   &none  &kp ESC   &none
                                            &none        &none  &kp SPACE          &kp SPACE    &none    &none
             >;
         };
